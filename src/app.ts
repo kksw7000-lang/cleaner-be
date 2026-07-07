@@ -8,6 +8,10 @@ app.get("/", (req, res) => {
   });
 });
 
+app.post("/auth",(req, res)=>{
+ console.log("auth 요청 확인!");
+});
+
 app.listen(4000, () => {
   console.log("서버가 4000번 포트에서 실행 중입니다.");
 });
