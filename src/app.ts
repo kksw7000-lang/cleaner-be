@@ -8,6 +8,10 @@ app.get("/", (req, res) => {
   });
 });
 
-app.listen(4000, () => {
-  console.log("서버가 4000번 포트에서 실행 중입니다.");
+app.get("/health", (req, res) => {
+  res.send("Health Check Success");
+});
+
+app.listen(3000, () => {
+  console.log("서버가 3000번 포트에서 실행 중입니다.");
 });
